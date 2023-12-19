@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<style> 
+		 .testdemo {
+        margin: 220px auto 0 auto;
+        transform-origin: bottom;
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+            animation-duration: 1000ms;
+            -webkit-animation-duration: 1000ms;
+            animation-direction: alternate;
+            -webkit-animation-direction: alternate;
+            animation-delay: .5s;
+            -webkit-animation-delay: .5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         .bounceInDown {
+            -webkit-animation-name: bounceInDown;
+            animation-name: bounceInDown;
+           
+         }
+         @-webkit-keyframes bounceInDown {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-2000px);
+            }
+            40% {
+               opacity: 1;
+               -webkit-transform: translateY(30px);
+            }
+            50% {
+                -webkit-transform: translateY(-50px);
+            }
+            70% {
+                -webkit-transform: translateY(30px);
+            }
+
+            90% {
+                -webkit-transform: translateY(-50px);
+            }
+            100% {
+                -webkit-transform: translateY(30px);
+            }
+         }
+         
+         @keyframes bounceInDown {
+            0% {
+               opacity: 0;
+               transform: translateY(-2000px);
+            }
+            40% {
+               opacity: 1;
+               transform: translateY(30px);
+            }
+            50% {
+               transform: translateY(-50px);
+            }
+            70% {
+               transform: translateY(30px);
+            }
+
+            90% {
+               transform: translateY(-50px);
+            }
+            100% {
+               transform: translateY(30px);
+            }
+         }
+         
+      
+	</style> 
+</head> 
+
+<body> 
+    <div class = "testdemo bounceInDown">
+        <img src="present.png"/>
+    </div>
+</body> 
+
+</html> 
